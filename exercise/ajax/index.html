@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js"></script>
+	<link rel="stylesheet" href="" type="text/css">
+	<script>
+		$(document).ready(function() {
+			$("#btnChange").click(function() {
+				$("#demo").load("content.txt", function(requestTxt, statusTxt, xhr) {
+					if (statusTxt == "success") {
+						alert("successfully loaded");
+					} 
+
+					if (statusTxt == "error") {
+						document.getElementById("demo").innerHTML = (xhr.status + ": " + xhr.statusText);
+					}
+				});
+			})
+		});
+	</script>
+</head>
+<body>
+
+		<h1>This is my sample text.</h1>
+		<p id="demo"></p>
+		<button id="btnChange" class="bg-primary">Click me to add content.</button>
+
+</body>
+</html>
