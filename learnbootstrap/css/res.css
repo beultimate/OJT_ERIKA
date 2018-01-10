@@ -1,0 +1,164 @@
+/*responsive*/
+
+@media screen and (max-width: 1280px) {
+	
+	#home .carousel-inner .display-1 {	
+		font-size: 5em;
+	}
+
+		#home .carousel-inner p {
+			font-size: 1em;
+		}
+
+		#who p{
+		padding: 2%;
+		font-size: .95em;
+		bottom: 8%;  
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	
+	#home .carousel-inner .display-1 {	
+		font-size: 4.5em;
+	}
+
+		#home .carousel-inner p {
+			font-size: .9em;
+		}
+
+		#who p{
+		padding: 2%;
+		font-size: .9em;
+		bottom: 5%;  
+		right: 5%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	
+	#home .carousel-inner .display-1 {	
+		font-size: 3.3em;
+	}
+
+		#home .carousel-inner p {
+			font-size: .75em;
+		}
+
+
+		#overlay-text {
+			width:60%;
+			position:absolute;
+			top:23%;
+			left:4%;
+			z-index: 1;
+		}
+
+
+		#overlay-text p {
+			max-width:350px;
+		}
+
+	#who p{
+		max-width:300px;
+		padding: 2%;
+		font-size: .75em;
+		bottom: 2%;  
+		right: 5%;
+	}
+
+
+	.container-fluid {
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	
+	
+	#home .carousel-inner .display-1 {	
+		font-size: 3.35em;
+	}
+
+		#home .carousel-inner p {
+			display:none;
+			font-size: .45em;
+			max-width:165px;
+		}
+	
+		#overlay-text {
+			max-width:125px;
+			width:60%;
+			position:absolute;
+			top:20%;
+			left:7%;
+			z-index: 1
+		}
+
+	#who p{
+		position:static;
+		display:block;
+		max-width:100%;
+		font-size: 1em;
+	}
+
+	footer h2 {
+		font-size: 1.65em !important;
+	}
+
+		.group-address {
+			font-size: 1.2em;
+			line-height: 1.45em;
+			margin-bottom: 50px;
+		}
+
+		.icon-group a {
+			padding: 10px;
+			font-size: 30px;
+			color: #000000;
+			transition: .11s color ease-in;
+		}
+}
+
+@media screen and (max-width: 425px) {
+	#home .carousel-inner .display-1 {	
+		font-size: 2.35em;
+	}
+
+@media screen and (max-width: 375px) {
+	#home .carousel-inner .display-1 {	
+		font-size: 1.9em;
+	}
+
+		#home .carousel-inner p {
+			display:none;
+			font-size: .45em;
+			max-width:165px;
+		}
+	
+		#overlay-text {
+			max-width:125px;
+			width:60%;
+			position:absolute;
+			top:20%;
+			left:8%;
+			z-index: 1
+		}
+	#who p{
+		position:static;
+		display:block;
+		max-width:100%;
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 320px) {
+
+
+	#who p{
+		position:static;
+		display:block;
+		max-width:100%;
+		font-size: 1em;
+	}
+}

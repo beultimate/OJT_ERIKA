@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Learning bootstrap!</title>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--customized stylesheet-->
+  <link rel="stylesheet" href="css/style.css">
+  <!--responsive-->
+  <link rel="stylesheet" href="css/res.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" class="bg-light">
+
+<!--navigation-->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+ <a class="navbar-brand" href="#home">our brand</a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+   
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+	  <ul class="navbar-nav">
+	   	<li class="nav-item">
+	    	<a class="nav-link" href="#what">What we do</a>
+	    </li>
+	    <li class="nav-item">
+	     	<a class="nav-link" href="#who">Who we are</a>
+	    </li>
+	    <li class="nav-item">
+	    	<a class="nav-link" href="#how">Talk to us</a>
+	    </li>    
+	   </ul>
+	 </div>
+</nav>
+	
+<!--home-->
+<div id="home" class="container-fluid">	
+	<div id="demo" class="carousel slide" data-ride="carousel">
+
+	  <ul class="carousel-indicators">
+	    <li data-target="#demo" data-slide-to="0" class="active"></li>
+	    <li data-target="#demo" data-slide-to="1"></li>
+	    <li data-target="#demo" data-slide-to="2"></li>
+	  </ul>
+	  
+	  <!-- slideshow content-->
+	  <div class="carousel-inner">
+
+	  	<div class="carousel-item active">
+	    	<img src="img/slide/slide1.jpg" alt="Chicago" width="100%" style="position:relative">
+				<div id="overlay-text">
+			  	<h1 class="display-1">We engage change.</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+						incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+						ullamco laboris nisi ut aliquip ex ea commodo consequat.	
+					</p>
+				</div>
+			</div>
+
+	    <div class="carousel-item">
+		  	<img src="img/coffee.jpeg" alt="Chicago" width="100%">
+	    </div>
+			
+			<div class="carousel-item">
+		  	<img src="img/pexels-photo-227432.jpeg" alt="New York" width="100%">
+	    </div>
+	  
+	  </div>
+	</div>
+</div>
+
+<!--what do we do-->
+<div id="what" class="container-fluid">
+
+	<!--our services-->
+	<h1>Here's our services</h1>
+  <hr>
+ 	
+ 	<div class="row text-center">
+  	<div class="col-md-4">
+			<img src="img/prod/smo.png" class="img-fluid" height="250px">
+  			<h5>Social Media Optimization</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+
+		<div class="col-md-4">
+			<img src="img/prod/web.png" class="img-fluid" height="250px">
+			<h5>Web Design and Development </h5>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+
+		<div class="col-md-4">
+			<img src="img/prod/seo.png" class="img-fluid" height="250px">
+			<h5>Search Engine Optimization</h5>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+  </div>
+	
+		<!--clients-->
+    <div class="jumbotron text-center" id="clients">
+	  	<h1>Our Clients</h1>
+
+	  	<a data-toggle="modal" data-target="#bct"><img src="img/clients/bct.png" class="img-fluid" width="260px"></a>
+	  	    
+  			  <div class="modal fade" id="bct">
+	    			<div class="modal-dialog modal-lg">
+	      			  <div class="modal-content">
+		        			<div class="modal-body">
+		          			<button type="button" class="close" data-dismiss="modal">&times;</button>
+		        			  <div style="margin: 50px">
+			        			  <div class="row" style="clear:both;">
+			        			  	<div class="col-sm-6">
+			        			  		<img class="img-fluid" src="img/modal/3.jpg" width="100%">
+			        			  	</div>
+			        			  	<div class="col-sm-6">
+			        			  		<img class="img-fluid" src="img/modal/3.jpg" width="100%">
+			        			  	</div>
+			        			  </div>		        			  
+			        			  <div class="row">
+			        			  	<div class="col-sm-6">
+			        			  		<img class="img-fluid" src="img/modal/3.jpg" width="100%">
+			        			  	</div>
+			        			  	<div class="col-sm-6 bg-dark text-light">
+			        			  		<h1 class="display-3"><a href="#">view more</a></h1>
+			        			  	</div>	        			  	
+			        			  </div>
+			        			</div>
+		       				</div>
+		       			</div>
+	  			 	</div>
+  			  </div>
+
+	  	<a data-toggle="modal" data-target="#giraffe"><img src="img/clients/giraffe.png" class="img-fluid" width="260px"></a>
+	  		
+  			  <div class="modal fade" id="giraffe">
+	    			<div class="modal-dialog modal-lg">
+	      			  <div class="modal-content">
+		        			<div class="modal-body">
+		          			<button type="button" class="close" data-dismiss="modal">&times;</button>
+		        			  <div style="margin: 50px">
+			        			  <div class="row" style="clear:both;">
+			        			  	<div class="col-sm-6">
+			        			  		<img class="img-fluid" src="img/modal/3.jpg" width="100%">
+			        			  	</div>
+			        			  	<div class="col-sm-6">
+			        			  		<img class="img-fluid" src="img/modal/3.jpg" width="100%">
+			        			  	</div>
+			        			  </div>		        			  
+			        			  <div class="row">
+			        			  	<div class="col-sm-6">
+			        			  		<img class="img-fluid" src="img/modal/3.jpg" width="100%">
+			        			  	</div>
+			        			  	<div class="col-sm-6 bg-dark text-light">
+			        			  		<h1 class="display-3"><a href="#">view more</a></h1>
+			        			  	</div>	        			  	
+			        			  </div>
+			        			</div>
+		       				</div>
+		       			</div>
+	  			 	</div>
+  			  </div>
+	  	
+	  	<a data-toggle="modal" data-target="#sl"><img src="img/clients/steves-leaves.png" class="img-fluid" width="260px"></a>
+	  		
+  			  <div class="modal fade" id="sl">
+	    			<div class="modal-dialog modal-lg">
+	      			  <div class="modal-content">
+		        			<div class="modal-body">
+		          			<button type="button" class="close" data-dismiss="modal">&times;</button>
+		        			  <div style="margin: 50px">
+			        			  <div class="row" style="clear:both;">
+			        			  	<div class="col-sm-6">
+			        			  		<img class="img-fluid" src="img/modal/3.jpg" width="100%">
+			        			  	</div>
+			        			  	<div class="col-sm-6">
+			        			  		<img class="img-fluid" src="img/modal/3.jpg" width="100%">
+			        			  	</div>
+			        			  </div>		        			  
+			        			  <div class="row">
+			        			  	<div class="col-sm-6">
+			        			  		<img class="img-fluid" src="img/modal/3.jpg" width="100%">
+			        			  	</div>
+			        			  	<div class="col-sm-6 bg-dark text-light">
+			        			  		<h1 class="display-3"><a href="#">view more</a></h1>
+			        			  	</div>	        			  	
+			        			  </div>
+			        			</div>
+		       				</div>
+		       			</div>
+	  			 	</div>
+  			  </div>
+
+	  	<a data-toggle="modal" data-target="#wagg"><img src="img/clients/wagg.png" class="img-fluid" width="260px"></a>
+	  		
+  			  <div class="modal fade" id="wagg">
+	    			<div class="modal-dialog modal-lg">
+	      			  <div class="modal-content">
+		        			<div class="modal-body">
+		          			<button type="button" class="close" data-dismiss="modal">&times;</button>
+		        			  <div style="margin: 50px">
+			        			  <div class="row" style="clear:both;">
+			        			  	<div class="col-sm-6">
+			        			  		<img class="img-fluid" src="img/modal/3.jpg" width="100%">
+			        			  	</div>
+			        			  	<div class="col-sm-6">
+			        			  		<img class="img-fluid" src="img/modal/3.jpg" width="100%">
+			        			  	</div>
+			        			  </div>		        			  
+			        			  <div class="row">
+			        			  	<div class="col-sm-6">
+			        			  		<img class="img-fluid" src="img/modal/3.jpg" width="100%">
+			        			  	</div>
+			        			  	<div class="col-sm-6 bg-dark text-light">
+			        			  		<h1 class="display-3"><a href="#">view more</a></h1>
+			        			  	</div>	        			  	
+			        			  </div>
+			        			</div>
+		       				</div>
+		       			</div>
+	  			 	</div>
+  			  </div>
+
+	  	<a data-toggle="modal" data-target="#yt"><img src="img/clients/yorkshire-tea.png" class="img-fluid" width="260px"></a>
+	  		
+  			  <div class="modal fade" id="yt">
+	    			<div class="modal-dialog modal-lg">
+	      			  <div class="modal-content">
+		        			<div class="modal-body">
+		          			<button type="button" class="close" data-dismiss="modal">&times;</button>
+		        			  <div style="margin: 50px">
+			        			  <div class="row" style="clear:both;">
+			        			  	<div class="col-sm-6">
+			        			  		<img class="img-fluid" src="img/modal/3.jpg" width="100%">
+			        			  	</div>
+			        			  	<div class="col-sm-6">
+			        			  		<img class="img-fluid" src="img/modal/3.jpg" width="100%">
+			        			  	</div>
+			        			  </div>		        			  
+			        			  <div class="row">
+			        			  	<div class="col-sm-6">
+			        			  		<img class="img-fluid" src="img/modal/3.jpg" width="100%">
+			        			  	</div>
+			        			  	<div class="col-sm-6 bg-dark text-light">
+			        			  		<h1 class="display-3"><a href="#">view more</a></h1>
+			        			  	</div>	        			  	
+			        			  </div>
+			        			</div>
+		       				</div>
+		       			</div>
+	  			 	</div>
+  			  </div>
+
+	  	<button type="button" id="vw_btn" class="btn btn-dark btn-lg">View our work</button>
+    </div>
+</div>
+
+<!--who are we-->
+<div id="who" class="container-fluid text-center" style="position:relative;">
+	<h1>We are ultimate.</h1>
+		<img src="img/lol.png" id="people-behind" class="img-fluid" >
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+	</div>
+</div>
+
+<!--how do you find us-->
+<div id="how" class="container-fluid">
+  <h1 class="text-center">Have a project in mind? Talk to us.</h1>
+		<div class="container">
+		  <form action="#">
+		    <div class="form-group">
+		      <label for="email">Subject:</label>
+		      <input type="email" class="form-control" id="email" placeholder="Enter subject" name="email">
+		    </div>
+		    <div class="form-group">
+		      <label for="pwd">Name:</label>
+		      <input type="password" class="form-control" id="name" placeholder="Enter name" name="pswd">
+		    </div>
+		    <div class="form-group">
+		      <label for="pwd">Message:</label>
+		      <textarea class="form-control" id="message" placeholder="Enter message" name="msg" rows="10"></textarea>
+		    </div>
+		    <button type="submit" class="btn btn-warning float-right">Send</button>
+		  </form>
+		</div>
+</div>
+
+<!--footer-->
+<footer class="container-fluid bg-warning text-center">
+		<p class="group-address">
+			2nd Floor GD Plaza 8002 <br>
+			McArthur Highway, Ilang ilang <br>
+			Guigiunto, Bulacan
+		</p>
+		
+		<h2>Stay connected with us!</h2>
+		<div class="icon-group">
+				<a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				<a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		</div>
+</footer>
+
+<!--smooth scrolling-->
+<script src="js/scroll.js"></script>
+
+</body>
+</html>

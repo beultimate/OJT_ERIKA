@@ -1,0 +1,171 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Cinzel+Decorative|Knewave|Lemon');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body {
+	margin:0 auto;
+	max-width:1440px;
+}
+
+/*navigation*/
+
+.navbar .navbar-brand {
+	font-size: 3em;
+}
+
+	.navbar-brand {
+		font-family: "Alfa Slab One";
+	}
+
+	.nav-item {
+		font-family: Knewave;
+		padding-left: 35px;
+		font-size: 1.25em;
+	}
+
+/*containers*/
+
+.container-fluid {
+	margin-bottom: 150px;
+}
+
+/*button*/
+
+button {
+	cursor: pointer !important;
+}
+
+/*home*/
+#home .carousel-inner .display-1 {	
+	font-family: "Alfa Slab One"; /*We engage change*/
+	margin:0;
+	padding:0;
+	width:100%;
+	font-size: 6em;
+}
+
+	#home .carousel-inner p {
+		font-size: 1.2em;
+	}
+
+	#overlay-text {
+		width:60%;
+		position:absolute;
+		top:25%;
+		left:7%;
+		z-index: 1;
+	}
+
+	#overlay-text p {
+		max-width:500px;
+	}
+
+
+/*what we do*/
+#what h1{
+	padding: 20px 15px;
+	border-bottom: 7px solid #ffdc00;
+	max-width:650px; /*for the border*/
+}
+
+	#what hr {
+		border: 4px solid #ffdc00;
+		margin:0 0 30px;
+		width:60%;  /*for the second border*/
+	}
+
+	#what .jumbotron {
+		margin-top: 50px;
+	}
+
+		#what .jumbotron h1 {
+			margin: 0 auto;
+			border-bottom: 1px solid #000;
+			max-width:300px; /*modified*/
+		}
+
+		#what img:hover {
+			cursor:pointer;
+			transition: .17s linear;
+			opacity: 0.9;
+		}
+
+		#vw_btn {
+			margin:25px auto 0;
+			max-width:300px;
+			cursor: pointer;
+		}
+
+			.col-sm-6 {
+				margin:0;
+				padding:0;
+			}
+
+			.modal h1{
+				margin: 40px 0 !important;
+				border-bottom: 0 !important; 
+				line-height: .75em; 
+			}
+
+			.modal h1 a {
+				color: #fff;
+			}
+
+			.modal h1 a:hover {
+				text-decoration:none;
+			}
+
+/*who are we*/
+#who h1, #how h1 {
+	margin:0 auto;
+	padding: 20px 15px;
+	border-bottom: 10px solid #ffdc00;
+	max-width:400px;
+}
+
+	#who p{
+		position:absolute;
+		bottom: 10%;  
+		right: 5%;
+		max-width:400px;
+		padding: 2.5%;
+		z-index:1;
+		background: rgba(255,255,255,0.85);
+	}
+
+/*how*/
+#how .container {
+	clear:right;
+	margin: 50px auto 0;
+}
+
+	#how button {
+		width: 20%;
+		padding: 10px;
+	}
+
+/*footer*/
+footer {
+	padding:60px 0;
+	margin-top: 200px;
+	margin-bottom: 0 !important;
+	font-family: "Source Sans Pro";
+	font-weight:bold;
+	color: #000;
+}
+
+	.group-address {
+		font-size: 1.5em;
+		line-height: 1.75em;
+		margin-bottom: 50px;
+	}
+
+	.icon-group a {
+		padding: 10px;
+		font-size: 45px;
+		color: #000000;
+		transition: .11s color ease-in;
+	}
+	.icon-group a:hover {
+		color: #232323;
+	}
