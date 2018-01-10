@@ -1,0 +1,21 @@
+html, body {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+#side-part {
+	padding: 0 50px 5%;
+}
+
+h2 {
+	margin-top: 25px;
+}
+
+#submit {
+	margin-top: 5px; 
+	width:200px;
+}
+
+#pictures-part {
+	padding: 3% 0 0 5%
+}
